@@ -1,0 +1,15 @@
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+  border: 1px solid blue;
+  margin: 0;
+  padding: 0;
+}
+
