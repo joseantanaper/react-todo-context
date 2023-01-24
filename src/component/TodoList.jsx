@@ -18,11 +18,19 @@ export default function TodoList() {
 
   return (
     <div>
-      <h1>Todo List</h1>
       {state.todos.length > 0 && state.todos.map((todo, id) => {
-        return <h4 key={id}>{id} - {todo} <button value={id} onClick={(e) => removeTodoHandler(e)}>x</button></h4> ;
+        return (
+          <div className="row" key={id} id={id}>
+            <div className="col">
+              <div className="input-group mb-2">
+                <span class="input-group-text bg-primary text-light" id="basic-addon1">#{id}</span>
+                <label type="text" className="form-control text-primary" placeholder="">{todo}</label>
+                <button className="btn btn-danger" type="button" value={todo} onClick={removeTodoHandler}>x</button>
+              </div>
+            </div>
+          </div>
+        );
       })}
-      
     </div>
   );
 }

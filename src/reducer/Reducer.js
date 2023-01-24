@@ -25,7 +25,9 @@ const reducer = (state, action) => {
       console.log(REMOVE_TODO, state.todos, action.payload);
       _todos = [...state.todos];
       const index = _todos.indexOf(action.payload);
+      console.log(REMOVE_TODO, "index:", index, "element:", _todos[index]);
       _todos.splice(index, 1);
+      console.log(REMOVE_TODO, "todos:", _todos);
       localStorage.setItem(APP_KEY, JSON.stringify(_todos));
       return {
         ...state,

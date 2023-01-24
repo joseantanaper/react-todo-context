@@ -1,0 +1,45 @@
+@import '../../node_modules/bootswatch/dist/lumen/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootswatch/dist/lumen/bootstrap.min';
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+  /*border: 1px solid blue;*/
+  margin: 0;
+  padding: 0;
+}
+
+body, * {
+  /* Font override prevents bootswatch font popping effect on load */
+  font-family: "Segoe UI";
+}
+
+body {
+
+}
+
+.App {
+  padding-top: 100px;
+  vertical-align: top;
+  min-height: 90vh;
+}
+
+#root {
+  width: 100% !important;
+  margin: 20px;
+  display: flexbox;
+  align-items: flex-start;
+
+}
+
+form.d-flex {
+  min-width: 480px;
+}
