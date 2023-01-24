@@ -18,14 +18,17 @@ export default function Todo() {
   }
 
   return (
-    <form>
-      <input
-        type="text"
-        name="todo"
-        value={todo}
-        onChange={(e) => setTodo(e.target.value)}
-      />
-      <button onClick={addTodoHandler}>Add Todo</button>
+    <form className="d-flex">
+      <div className="input-group mb-1">
+        <input
+          type="text"
+          name="todo"
+          className="form-control"
+          value={todo}
+          onChange={(e) => setTodo(e.target.value)}
+        />
+        <button onClick={addTodoHandler} className="btn btn-success">Add Todo</button>
+      </div>
     </form>
   );
 }
