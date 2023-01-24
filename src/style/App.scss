@@ -1,6 +1,6 @@
-@import '../../node_modules/bootswatch/dist/lumen/variables';
-@import '../../node_modules/bootstrap/scss/bootstrap';
-@import '../../node_modules/bootswatch/dist/lumen/bootstrap.min';
+@import 'bootswatch/dist/lumen/variables';
+@import 'bootstrap/scss/bootstrap';
+@import 'bootswatch/dist/lumen/bootstrap.min';
 
 *, ::before, ::after {
 	margin: 0;
